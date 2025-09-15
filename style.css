@@ -1,0 +1,217 @@
+* {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  font-size: 24px;
+}
+
+.h2 {
+  font-size: 24px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  gap: 30px;
+  padding: 30px 0;
+}
+
+.header__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.header__contacts {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about {
+  margin-top: 20px;
+}
+
+.table {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table__hobbies {
+  border: 1px solid #008000;
+  border-radius: 10px 0 0 10px;
+}
+
+.table__hobbies-title,
+.table__social-title {
+  border-bottom: 1px solid green;
+  text-align: center;
+  color: green;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.table__social {
+  border: 1px solid #008000;
+  border-radius: 0 10px 10px 0;
+
+}
+
+.table__list {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.table__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.table__list-item:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.table__list-item>a {
+  text-decoration: none;
+  color: black;
+}
+
+.title {
+  background: green;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 5px 0;
+  margin-top: 60px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.technologies__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.technologies__item>img {
+  border-radius: 50%;
+}
+
+.technologies__item:hover {
+  box-shadow: 0 4px 20px 0 #5a9645;
+  cursor: pointer;
+  background: green;
+}
+.technologies__item:hover{
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+
+    /*.feedback-form {
+     max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+    padding: 30px;
+  } */
+
+  /* Заголовок формы */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: normal;
+  }
+
+  /* Поля и кнопка */
+  .form-group {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-top: 12px;
+  } 
+
+  /* Вводы и текстовая область */
+
+    
+  textarea {width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc; /* серая рамка */
+    border-radius: 8px; /* скругление углов */
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+    resize: none; /* отключить растягивание */
+    overflow-y: auto; /* появление полосы прокрутки при необходимости */
+    vertical-align: bottom; /* чтобы текст начинался снизу, если нужно, можно использовать свойство */
+  
+    
+  }
+
+  input[ id="name"] { padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    resize: both; width: 46%;
+  }
+
+  input[ id="phone"] { padding: 10px;
+    margin-left: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    resize: both; width: 47%;
+  }
+
+  /* Кнопка */
+  button {
+    background-color: #006400; /* насыщенный зеленый */
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 20%;
+    transition: background-color 0.3s;
+    margin: 20px auto;
+
+  }
+
+  button:hover {
+    background-color: #004d00;
+  }
+  .input-container {
+    max-width: 100%;
+    margin: 0 auto;
+
+  }
+  
