@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Заметки</title>
+  <link rel="stylesheet" href="style2.1.css" />
+</head>
+<body>
+  <div class="body">
+    <div class="main">
+      
+      <!-- Боковая панель -->
+      <div class="left_bar">
+        <div class="title">Мои заметки</div>
+        <button class="new_note_button" id="new_note_button">Создать заметку</button>
+        <div class="tags_container">
+          <div class="title_tags">Теги</div>
+          <button class="tags_item">Все</button>
+          <button class="tags_item">Работа</button>
+          <button class="tags_item">Личное</button>
+          <button class="tags_item">Учеба</button>
+        </div>
+      </div>
+      
+      <!-- Основная часть -->
+      <div class="main_bar">
+        <!-- Поиск -->
+        <div class="poisk">
+          <input type="text" class="note_input" id="note_input" placeholder="Поиск..."/>
+          <div class="poisk1" id="poisk1"></div>
+        </div>
+        <!-- Контейнер заметок -->
+        <div class="notes_container" id="notes_container"></div>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Модальное окно для редактирования/добавления -->
+  <div class="modal_window" id="modal_window">
+    <div class="modal_content">
+      <div class="modal_title">Добавить заметку</div>
+      <input type="text" class="modal_input" id="modal_note_text" placeholder="Введите текст заметки" />
+      
+      <div class="modal_dropdown" id="modal_tag_select">
+        <!-- Здесь можно вставлять список тегов -->
+      </div>
+      
+      <button class="modal_button" id="save_note_button">Сохранить</button>
+    </div>
+  </div>
+
+  <script src="script2.1.js"></script>
+</body>
+</html>

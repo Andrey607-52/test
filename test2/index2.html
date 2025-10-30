@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = 'UTF-8'>
+    <meta name = 'viewport' content = 'width = device-width, initial-scale = 1'>
+    <link rel = 'stylesheet' href = 'style2.css'>
+    <title>Мои Заметки</title>
+
+    <script src = 'script2.js' defer></script>
+</head>
+
+<body class = 'body'>
+    <div class = 'main'>
+        
+        <div class = 'left_bar'>
+            <span class = 'title'>Мои Заметки</span>
+            <button class = 'new_note_button' id = 'new_note_button'>Новая Заметка</button>
+            
+            <div class = 'tags_container' id = 'tags_container'>
+                <span class = 'title_tags' id = 'title_tags'>Теги</span>
+                <button class = 'tags_item' id = 'tags_item'>Все</button>
+                <button class = 'tags_item' id = 'tags_item'>Идеи</button>
+                <button class = 'tags_item' id = 'tags_item'>Личное</button>
+                <button class = 'tags_item' id = 'tags_item'>Работа</button>
+            </div>
+        </div>
+
+        <div class = 'main_bar'>
+            
+            <div class = 'poisk' id = 'poisk'>
+                <input class = 'note_input' type = 'text' placeholder = 'Поиск' id = 'note_input'>
+                <button class = 'poisk1' id = 'poisk1'>
+                </button>
+            </div>
+
+            <div class = 'notes_container' id = 'notes_container'>
+            </div>
+        </div>
+
+        
+
+    </div>
+    <div class = 'modal_window' id = 'modal_window'>
+        <div class = 'modal_content' id = 'modal_content'>
+            <span class = 'modal_title'>Новая Заметка</span>
+            <input class = 'modal_input' id = 'modal_input' placeholder = 'Название заметки'></input>
+            <select class = 'modal_dropdown' id = 'modal_dropdown'>
+                <option value = '1'>Все</option>
+                <option value = '2'>Идеи</option>
+                <option value = '3'>Личное</option>
+                <option value = '4'>Работа</option>
+            </select>
+            <button class = 'modal_button' id = 'modal_button'>Создать</button>
+        </div>
+    </div>
+</body>
+</html>

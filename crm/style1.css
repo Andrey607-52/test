@@ -1,0 +1,125 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 20px;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #4A90E2;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.form-container, .search-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 10px 15px;
+  width: 220px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+  border-color: #4A90E2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  opacity: 0.9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+thead {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #fff;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease;
+}
+
+th {
+  font-size: 1.1em;
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.actions button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.actions button.edit {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+.actions button.edit:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.actions button.delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.actions button.delete:hover {
+  background-color: #da190b;
+  transform: scale(1.05);
+}
+
+/* Анимация появления элементов */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(74, 144, 226, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(74, 144, 226, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(74, 144, 226, 0); }
+}
+
+button:active {
+  animation: pulse 0.6s;
+}
